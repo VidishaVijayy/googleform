@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Google Form</h1>
+    <p>Please fill out the form below and submit your responses.</p>
+  </header>
+  
+  <main>
+    <form>
+      <!-- Form Title -->
+      <div class="form-title">
+        <h2>Feedback Form</h2>
+        <p>Your feedback helps us improve!</p>
+      </div>
+      
+      <!-- Question 1 -->
+      <div class="question">
+        <label for="q1">1. What is your name?</label><br>
+        <input type="text" id="q1" name="q1" placeholder="Enter your name" required>
+      </div>
+      
+      <!-- Question 2 -->
+      <div class="question">
+        <label for="q2">2. What is your gender?</label><br>
+        <select id="q2" name="q2" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+          <option value="Don't want to reveal">Don't want to reveal</option>
+          <option value="LGBTQ++++">LGBTQ++++</option>
+        </select>
+      </div>
+      
+      <!-- Question 3 -->
+      <div class="question">
+        <label for="q3">3. Please provide additional feedback:</label><br>
+        <textarea id="q3" name="q3" placeholder="Your feedback..." rows="5" required></textarea>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Google Form Clone</p>
+  </footer>
+</body>
+</html>
